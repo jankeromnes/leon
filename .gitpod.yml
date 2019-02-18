@@ -1,0 +1,6 @@
+ports:
+- port: 1337
+tasks:
+- before: nvm install 10
+  init: npm install
+  command: npm run build && npm start
